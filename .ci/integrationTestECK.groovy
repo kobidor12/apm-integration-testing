@@ -2,7 +2,7 @@
 @Library('apm@current') _
 
 pipeline {
-  agent { label 'linux && immutable' }
+  agent { label 'ubuntu-20 && immutable' }
   environment {
     BASE_DIR="src/github.com/elastic/apm-integration-testing"
     EC_DIR="src/github.com/elastic/observability-test-environments"
