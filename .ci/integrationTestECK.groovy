@@ -120,7 +120,7 @@ def provisionEnvironment(){
 }
 
 def runTest(test){
-  log(level: "INFO", text: "Running tests - ${test()}")
+  log(level: "INFO", text: "Running tests - ${test}")
   deleteDir()
   unstash 'source'
   withElasticStackVersion() {
