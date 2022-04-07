@@ -1,4 +1,4 @@
-FROM node:12.18.1
+FROM node:12.22.11
 
 RUN mkdir -p /app
 RUN npm install express
