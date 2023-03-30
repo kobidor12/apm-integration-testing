@@ -10,7 +10,7 @@ RUN (cd /src/apm-agent-go \
   && git checkout ${GO_AGENT_BRANCH})
 RUN CGO_ENABLED=0 go build -mod=mod
 
-FROM alpine:latest
+FROM alpine:3.17.3
 RUN apk add --update curl && rm -rf /var/cache/apk/*
 COPY --from=0 /src/testapp/testapp /
 EXPOSE 8080
