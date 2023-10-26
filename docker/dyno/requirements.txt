@@ -6,3 +6,4 @@ flask-cors
 Flask-Limiter
 Flask-Caching
 git+https://github.com/cachedout/toxiproxy-python.git
+werkzeug>=3.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
