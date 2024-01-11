@@ -2,7 +2,7 @@ FROM node:12-buster as BUILD_IMAGE
 WORKDIR /app
 RUN npm install elasticdump
 
-FROM python:3.7-buster
+FROM python:3.7.17-bullseye
 COPY requirements.txt requirements.txt
 RUN pip install -q -r requirements.txt
 
